@@ -2,13 +2,14 @@
 
 ## 简介
 本项目用于 研究和实践 docker的工作流部署发布
+> [查看github源码](https://github.com/liyaocool/docker-web-demo) 
 
 > 技术栈
 - spring-web （RESTAPI 请求交互）
 - redis （用于实验 多容器通信）
 - maven
 
-## 一. 本地启动
+## 一. 本地启动(不属于本docker实验，需要自己本地有redis服务)
 
 ### 启动
 
