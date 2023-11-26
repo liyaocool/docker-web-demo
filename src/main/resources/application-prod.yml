@@ -1,6 +1,7 @@
 spring:
   data:
     redis:
-      # docker网络空间别名 --network-alas
-      host: redis-net
+      # docker网络空间别名 --network-alas； 如果是docker compose启动 host可为服务名称：redis，compose会自动新建默认网络空间
+#      host: redis-net
+      host: redis
       port: 6379

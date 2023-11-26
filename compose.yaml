@@ -1,5 +1,22 @@
 services:
+
+  web-demo:
+    # 当前目录下的Dockerfile构建
+    build: .
+    ports:
+      - '8080:8080'
+    volumes:
+      - web-demo-data:/usr/local/workspace/web-demo
+    environment:
+      - TZ=Asia/Shanghai
+
   redis:
     image: 'redis:latest'
-    ports:
-      - '6379'
+    volumes:
+      - redis-data:/data
+    environment:
+      - TZ=Asia/Shanghai
+
+volumes:
+  web-demo-data:
+  redis-data:
