@@ -1,0 +1,6 @@
+spring:
+  data:
+    redis:
+      # docker网络空间别名 --network-alas
+      host: redis-net
+      port: 6379

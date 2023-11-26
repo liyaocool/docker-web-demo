@@ -1,0 +1,6 @@
+spring:
+  data:
+    redis:
+      # 本地运行的redis
+      host: localhost
+      port: 6379
